@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Encode+Sans+Expanded:wght@300;500;600&family=Fira+Code:wght@300;400;600&display=swap');
+
+/* font-family: 'Asap', sans-serif';
+font-family: 'Encode Sans Expanded', sans-serif;
+font-family: 'Fira Code', monospace; */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: rgb(46, 212, 46);
+    font-family:'Fira Code', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+button {
+  color:black;
+  font-weight: 800;
+}
+
+
+.pw-container{
+    background-color: rgb(42, 40, 40);
+    box-shadow: 80px 80px 70px 80px;
+    min-width: 400px;
+    border-radius: 8px; 
+    /* check if padding is right */
+     padding: 5px;
+  
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rgb(249, 238, 238);
+    height: 70px;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.pw button {
+    background-color: rgb(249, 238, 238);
+    color: rgb(42, 40, 40);
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    padding: 0.25rem;
+    top: 0;
+    right: 0;
+    transform: translateX(0, 20%);
+    transition: opacity 0.2 ease, transform 0.2s ease;
+    opacity: 0;
+    
+}
+
+.pw:hover button {
+    opacity: 1;
+    background-color: rgb(249, 238, 238);
+    color: rgb(42, 40, 40);
+    transform: translate(0, 0%);
+    width: 12%;
+    height: 37%;
+   border: 0.6px solid rgb(42, 40, 40);
+    border-radius: 5px;
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.generate {
+    background-color: rgb(249, 238, 238);
+    display: block;
+     color: rgb(42, 40, 40);
+     font-weight: bold;
+     padding: 0.5rem;
+     font-size: 1.5rem;
+     margin-top: 0.75rem;
+     width: 100%;
+     border: 0.5px solid rgb(42, 40, 40);
+     border-radius: 8px;
+     cursor: pointer;
+}
